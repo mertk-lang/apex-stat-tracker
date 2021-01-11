@@ -1,0 +1,32 @@
+{
+  "name": "apexstattracker",
+  "version": "1.0.0",
+  "description": "Track stats of apex players",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm run serve --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mertk-lang/apex-stat-tracker.git"
+  },
+  "author": "Mert Koçak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mertk-lang/apex-stat-tracker/issues"
+  },
+  "homepage": "https://github.com/mertk-lang/apex-stat-tracker#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
