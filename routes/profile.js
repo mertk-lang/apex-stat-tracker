@@ -22,9 +22,9 @@ router.get('/:platform/:gamertag', async (req, res) => {
             return res.status(404).json({
                 message: 'Profile not found'
             });
-        }
-
-        res.json(data);
+        } 
+            res.json(data);
+        
     } catch (err) {
         console.error(err);
         res.status(500).json({
